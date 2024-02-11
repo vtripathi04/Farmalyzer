@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Farmer Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">
+                    <img src="logo.png" alt="">
+                    <span class="nav-item">Dashboard</span>
+                </a></li>
+                <li><a href="Profile/index.html">
+                    <i class="fas fa-user"></i>
+                    <span class="nav-item">Farmer Profile</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-upload"></i>
+                    <span class="nav-item">Upload Crop</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-chart-bar"></i>
+                    <span class="nav-item">Analytics</span>
+                </a></li>
+                <li><a href="">
+                    <i class="fas fa-cog"></i>
+                    <span class="nav-item">Settings</span>
+                </a></li>
+                <li><a href="" class="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="nav-item">Log out</span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <section class="main">
+            <div class="main-top">
+                <h1>Upload Crop Details</h1>
+                <i class="fas fa-user-cog"></i>
+            </div>
+            <div class="main-skills">
+                <div class="card">
+                    <form action="upload_crop.php" method="POST" enctype="multipart/form-data">
+                        <label for="region">Select Region:</label><br>
+                        <select id="region" name="region">
+                            <option value="North">North</option>
+                            <option value="South">South</option>
+                            <option value="East">East</option>
+                            <option value="West">West</option>
+                        </select><br>
+                        <label for="crop_name">Select Crop:</label><br>
+                        <select id="crop_name" name="crop_name">
+                            <option value="Wheat">Wheat</option>
+                            <option value="Rice">Rice</option>
+                            <option value="Maize">Maize</option>
+                            <option value="Cotton">Cotton</option>
+                        </select><br>
+                        <label for="crop_density">Crop Density:</label><br>
+                        <input type="number" id="crop_density" name="crop_density" min="1"><br><br>
+                        <input type="submit" value="Upload">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

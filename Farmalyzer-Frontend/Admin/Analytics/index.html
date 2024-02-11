@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Analytic Dashboard</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+      <div class="content">
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- Head -->
+          <div class="head flex">
+            <h1>Farmer Analytics</h1>
+
+            <div class="box flex time-period">
+              Monthly
+              <ion-icon class="angle" name="caret-down-outline"></ion-icon>
+            </div>
+
+            <div class="box flex">
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
+          </div>
+          <!-- End Head -->
+
+          <!-- Stats -->
+          <div class="stats flex">
+            <div class="stats box sales">
+              <h2 class="heading">Crops</h2>
+              <canvas id="sales"></canvas>
+            </div>
+
+            <div class="stats-box earning">
+              <h2 class="heading">Grown</h2>
+              <div class="earning-amount flex-c">
+                <div class="earning-icon flex">
+                  <ion-icon name="logo-paypal"></ion-icon>
+                </div>
+                <p>25000</p>
+              </div>
+              <canvas id="earning"></canvas>
+            </div>
+          </div>
+
+          <!-- Product Stats -->
+
+          <!-- End Stats -->
+        </div>
+        <!-- End Main Content -->
+
+        <!-- Profile -->
+        <div class="profile">
+          <div class="title flex">
+            <h2 class="heading">Profile</h2>
+            <div class="icon">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="user">
+            <img src="https://raw.githubusercontent.com/programmercloud/analytic-dashboard/main/img/avatar.png" alt="" />
+            <h2>Raj Patel</h2>
+            <p>Location: Haryana</p>
+          </div>
+
+          <div class="activities">
+            <div class="title flex">
+              <h2 class="heading">Avtivity</h2>
+              <p>View All</p>
+            </div>
+          </div>
+
+          <div class="activity flex">
+            <div class="icon">
+              <ion-icon name="wallet-outline"></ion-icon>
+            </div>
+
+            <div class="task">
+              <h2>Data Submited</h2>
+              <p>250</p>
+            </div>
+            <div class="time">11:30 AM</div>
+          </div>
+
+          <div class="activity flex">
+            <div class="icon">
+              <ion-icon name="wallet-outline"></ion-icon>
+            </div>
+
+            <div class="task">
+              <h2>Data Submited</h2>
+              <p>150</p>
+            </div>
+            <div class="time">12:20 AM</div>
+          </div>
+
+      </div>
+    </div>
+    <!-- End Dashboard -->
+    <!-- Ion Icons Js -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
